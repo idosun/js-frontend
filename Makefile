@@ -1,7 +1,7 @@
 # Must have `sentry-cli` installed globally
 # Following variable must be passed in
 #  
-SENTRY_AUTH_TOKEN=0b6a5ae8061044b9b3ac2d03e6ed93bee56491edabca4353af28f3c0a449394b
+SENTRY_AUTH_TOKEN=
 SENTRY_ORG=myorg001
 SENTRY_PROJECT=js-frontend
 PREFIX=dist/
