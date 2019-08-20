@@ -1,0 +1,31 @@
+/* Variables */
+$base-font-size: 16px;
+$font-color: #252227;
+
+$tablet: 768px;
+$desktop: 1024px;
+
+
+body, html {
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+    font-size: $base-font-size;
+    color: $font-color;
+   background-color: #a37dd4
+}
+ 
+div.wrapper {
+    background-position-x: 50%;
+    background-image: url('./static/sentry-pattern.png');
+    height: -webkit-fill-available;
+    background-size: 402px 332px;
+    text-align: center;
+}
+
+div.image-container{
+    text-align: center;
+    height: inherit;
+}

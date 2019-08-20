@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    
+    <!-- Import SDK -->
+    <script src="https://browser.sentry-cdn.com/5.6.2/bundle.min.js" integrity="sha384-H4chu/XQ3ztniOYTpWo+kwec6yx3KQutpNkHiKyeY05XCZwCSap7KSwahg16pzJo" crossorigin="anonymous">
+    </script>
+    
+    <!-- Configure SDK -->
+    <script>
+        Sentry.init({
+          dsn: 'https://728030a7b051450f91197d2f66a61170@sentry.io/1536274',
+          release: "%RELEASE_VERSION%",
+          environment: "prod"
+        });
+      </script>
+  </head>
+
+  <body>
+      <div class="wrapper">
+          <!-- <h1> <%= htmlWebpackPlugin.options.myPageHeader %> </h1>
+          <h3>Welcome to the Awesome application..</h3> -->
+          <div class="image-container">
+              <image id="sentryIcon" src="./static/sentry-glyph-black.png" onclick="onImageClick();" style="cursor: pointer;"></image>
+          </div>
+      </div>
+  </body>
+</html>
